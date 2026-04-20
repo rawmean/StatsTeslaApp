@@ -1,84 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stats for Tesla - MaaDoTaa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header, footer {
-            text-align: center;
-            padding: 10px;
-            background: #004080;
-            color: white;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h1, h2 {
-            color: #004080;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats for Tesla | Your Tesla, Deeper and Smarter</title>
+  <meta name="description" content="Stats for Tesla brings live charging, Siri control, Apple Watch actions, widgets, battery health, road-trip intelligence, and deep vehicle analytics into one refined app.">
+  <meta name="theme-color" content="#09111f">
+  <meta property="og:title" content="Stats for Tesla">
+  <meta property="og:description" content="Live charging, Siri control, battery health, Apple Watch actions, and rich Tesla insights in one app.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/icons/app-icon-1024.png">
+  <meta property="og:url" content="https://www.getstatsapp.com/">
+  <link rel="preload" as="image" href="/videos/stats_app_hero_poster.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Stats for Tesla</h1>
-        <p>Enhance your Tesla experience with detailed analytics and control features.</p>
-    </header>
-    <section>
-        <h2>Key Features</h2>
-        <ul>
-            <li>Phantom Drain Monitoring: Operates without waking your car.</li>
-            <li>Live Charging Activity: Real-time charging status on lock screen widgets.</li>
-            <li>Lock Screen Widgets: Battery and temperature details without waking the car.</li>
-            <li>Smart Window Venting: Automatic or manual window control based on temperature.</li>
-            <li>Sentry View: View Sentry Mode videos and combine them with timestamps.</li>
-            <li>Notifications: Alerts for open doors or active climate control.</li>
-            <li>Cost Savings Analysis: Compare costs with a traditional gasoline vehicle.</li>
-            <li>Siri Integration: Control your car using Siri Shortcuts.</li>
-            <li>Performance Comparisons: Compare efficiency metrics with other users.</li>
-            <li>Charging Insights: Analyze charge rates during sessions.</li>
-            <li>Battery Health Tracking: Monitor maximum range over time.</li>
-            <li>Charge Reminders: Notifications for low battery at specific locations.</li>
-            <li>Climate Scheduling: Set climate control for specific times.</li>
-            <li>Battery Pre-Conditioning: Automatic top-off charge before usage.</li>
-        </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Stats for Tesla home">
+        <img src="/assets/icons/app-icon-1024.png" alt="Stats for Tesla app icon" width="44" height="44">
+        <span>
+          <strong>Stats for Tesla</strong>
+          <small>by Maadotaa</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#insights">Insights</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#support">Support</a>
+      </nav>
+
+      <a class="download-chip" href="https://itunes.apple.com/app/id1191100729" target="_blank" rel="noreferrer">
+        Download
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Tesla control, charging, automation, and analytics</p>
+          <h1>Your Tesla, deeper and smarter.</h1>
+          <p class="hero-text">
+            Stats for Tesla brings together live charging controls, Siri natural-language commands,
+            Apple Watch actions, powerful widgets, smart automations, and deep vehicle analytics
+            in one polished app designed for people who want more from their Tesla.
+          </p>
+
+          <div class="hero-actions">
+            <a class="badge-link" href="https://itunes.apple.com/app/id1191100729" target="_blank" rel="noreferrer" aria-label="Download Stats for Tesla on the App Store">
+              <img src="/assets/badges/app-store-badge.svg" alt="Download on the App Store" width="180" height="60">
+            </a>
+          </div>
+
+          <ul class="trust-points" aria-label="Highlights">
+            <li>Official Tesla API support</li>
+            <li>Tesla-hosted sign-in</li>
+            <li>Apple Watch, widgets, and Live Activities</li>
+            <li>Battery health, trips, charging, and automation</li>
+          </ul>
+
+          <section class="hero-support-card support-card reveal glass-card" id="support">
+            <p class="eyebrow">Support</p>
+            <h3>Need help with Stats?</h3>
+            <p>The best place to start is the <strong>Support</strong> button inside the Stats app. It helps route your request with the right context and is the fastest path for most issues.</p>
+            <p>If you still need to reach out directly, email us and include a short description of the issue, your Tesla model, and any relevant screenshots or steps.</p>
+            <div class="support-actions">
+              <a class="primary-button" href="mailto:apps@maadotaa.com?subject=Need%20Help%20with%20Stats%20app">Email Support</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-device-stack">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+            <div class="hero-video-shell">
+              <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="/videos/stats_app_hero_poster.jpg"
+                aria-label="Stats for Tesla app preview video"
+              >
+                <source src="/videos/stats_app_hero_web.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="hero-stat-card glass-card">
+            <div class="hero-card-media">
+              <video
+                class="hero-card-video"
+                autoplay
+                muted
+                playsinline
+                preload="metadata"
+                poster="/videos/newWatch_main_poster.jpg"
+                aria-label="Apple Watch interaction preview"
+              >
+                <source src="/videos/newWatch_main_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <span class="stat-label">Apple Watch</span>
+            <strong>Interact with your car from Apple Watch</strong>
+            <p>Open controls, trigger quick actions, and keep key Tesla functionality close even when your phone is not in your hand.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section>
-        <h2>Learn More</h2>
-        <p>For more information and to download the app, visit the 
-            <a href="https://www.maadotaa.com/" target="_blank">Stats for Tesla website</a>.
-        </p>
+
+    <section class="section section-compact" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Social proof</p>
+          <h2 id="reviews-title">Loved by Tesla owners who want more than the default view.</h2>
+          <p>Real reactions from Stats users, plus the App Store rating that reflects years of daily use by Tesla owners.</p>
+        </div>
+
+        <div class="reviews-hero reveal glass-card">
+          <div class="reviews-hero-copy">
+            <p class="feature-kicker">Owner sentiment</p>
+            <h3>Built a loyal following among detail-oriented Tesla drivers.</h3>
+            <p>From power users tracking battery health to everyday owners relying on Siri, Watch actions, widgets, and charging visibility, Stats has earned strong word of mouth over time.</p>
+          </div>
+          <img src="/Stats_reviews/rating.png" alt="Stats for Tesla rating graphic showing 3.7K ratings and a 4.7 score">
+        </div>
+
+        <div class="reviews-marquee reveal" aria-label="User testimonials from X">
+          <div class="reviews-track">
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img1.jpg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img2.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img3.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img4.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img5.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img6.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img7.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img8.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img9.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img10.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img11.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+            <article class="review-tile glass-card"><img src="/Stats_reviews/img12.jpeg" alt="User testimonial from X about Stats for Tesla"></article>
+
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img1.jpg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img2.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img3.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img4.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img5.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img6.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img7.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img8.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img9.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img10.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img11.jpeg" alt=""></article>
+            <article class="review-tile glass-card" aria-hidden="true"><img src="/Stats_reviews/img12.jpeg" alt=""></article>
+          </div>
+        </div>
+      </div>
     </section>
-    <section>
-        <h2>Developer Information</h2>
-        <p>The developer, MaaDoTaa, has created additional apps available on the 
-            <a href="https://apps.apple.com/us/developer/maadotaa/id488542017" target="_blank">App Store</a>.
-        </p>
-        <p>Follow updates and announcements on 
-            <a href="https://x.com/statsteslaapp" target="_blank">X (formerly Twitter)</a>.
-        </p>
-        <p>For support, contact via email at <a href="mailto:apps@maadotaa.com">apps@maadotaa.com</a>.</p>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Feature showcase</p>
+          <h2>Unique features organized around real use.</h2>
+          <p>From hands-free control to charging visibility and everyday convenience, Stats now reaches far beyond a simple companion app.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Smart control</p>
+              <h3>Talk to your Tesla naturally.</h3>
+              <p>Ask Siri to perform actions in natural language, jump into Stats shortcuts, or route to the nearest ER when it matters.</p>
+              <ul>
+                <li>Siri natural-language requests</li>
+                <li>Nearest ER routing when it matters</li>
+                <li>Quick actions across iPhone and Apple Watch</li>
+              </ul>
+            </div>
+            <div class="feature-media dual-media dual-media-vertical">
+              <img src="/assets/images/siri-natural-language.jpg" alt="Stats for Tesla Siri natural-language control">
+              <img src="/assets/images/nearest-er.png" alt="Stats for Tesla nearest ER shortcut">
+            </div>
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">FSD Utilization</p>
+              <h3>See how your FSD utilization compares.</h3>
+              <p>You can now see a distribution of FSD utilization across users in the Compare tab. If your car has FSD and HW4, Stats also shows where your utilization lands against other users and surfaces that utilization on the main screen of the app.</p>
+            </div>
+            <img class="feature-image" src="/assets/images/fsd-utilization-top.png" alt="Stats for Tesla FSD utilization feature from the new Compare view">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Heads Up Display</p>
+              <h3>Bring key vehicle info to the foreground.</h3>
+              <p>The Heads-Up Display gives you an at-a-glance read on essential driving details when you want less hunting and more context.</p>
+            </div>
+            <img class="feature-image" src="/assets/images/heads-up-display.png" alt="Stats for Tesla heads-up display feature">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Apple Watch</p>
+              <h3>Control your Tesla from your wrist.</h3>
+              <p>Use rich watch actions, check charging progress, and keep key Tesla controls close for the moments when your phone is not in hand.</p>
+            </div>
+            <div class="watch-collage">
+              <img src="/assets/images/watch-app-1.png" alt="Stats for Tesla Apple Watch screen">
+              <img src="/assets/images/watch-app-4.png" alt="Stats for Tesla Apple Watch controls">
+              <img src="/assets/images/watch-app-5.png" alt="Stats for Tesla Apple Watch feature screen">
+            </div>
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Watch Shake</p>
+              <h3>Trigger Tesla actions with a shake of your wrist.</h3>
+              <p>Stats adds a quick Apple Watch gesture so you can launch fast routines and get to useful car actions even faster when you are on the move.</p>
+            </div>
+            <div class="feature-media-stack">
+              <div class="feature-video-embed">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/crK0h4R1Rf4?start=1&rel=0"
+                  title="Watch Shake feature video"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <img class="feature-image" src="/assets/images/watch-shake.png" alt="Stats for Tesla Watch Shake feature on Apple Watch">
+            </div>
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Smart Venting</p>
+              <h3>Automatically vent and close windows based on cabin heat.</h3>
+              <p>Stats will vent the windows if inside temperature exceeds the limit you set, then close the windows again once temperature drops below that threshold. You can require confirmation first or let the app handle it automatically.</p>
+            </div>
+            <img class="feature-image" src="/assets/images/smart-window-venting.png" alt="Stats for Tesla Smart Vent feature from version 5.5.20">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Car Maintenance</p>
+              <h3>Track service intervals and get reminded at the right time.</h3>
+              <p>Stats keeps track of your car maintenance and sends notifications when it is time to perform a service, helping you stay ahead of routine upkeep directly from the app.</p>
+              <ul>
+                <li>Tire rotation</li>
+                <li>Cabin air filter</li>
+                <li>Brake fluid test</li>
+                <li>AC service</li>
+              </ul>
+            </div>
+            <img class="feature-image" src="/assets/images/car-maintenance.png" alt="Stats for Tesla car maintenance tracking screen">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Low Battery Range</p>
+              <h3>See how far you can still travel on the map.</h3>
+              <p>When the estimated range drops below 100 km (62 mi), Stats shows your remaining reachable area on the map so you can make a quicker charging decision with less guesswork.</p>
+            </div>
+            <img class="feature-image" src="/assets/images/low-battery-range-map.png" alt="Stats for Tesla low battery range map">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Controls everywhere</p>
+              <h3>Keep useful controls close with widgets and Control Center.</h3>
+              <p>Stats extends to widgets, Control Center, and other system surfaces so common actions and live vehicle info are never far away.</p>
+            </div>
+            <img class="feature-image" src="/assets/images/control-center-widget.png" alt="Stats for Tesla Control Center widget">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Newest utility</p>
+              <h3>Adjust Equalizer</h3>
+              <p>Fine-tune audio settings directly from Stats when you want one more polished control surface in your Tesla workflow.</p>
+            </div>
+            <img class="feature-image feature-image-contain" src="/assets/images/adjust-equalizer.png" alt="Stats for Tesla Adjust Equalizer feature screen">
+          </article>
+
+          <article class="feature-card reveal glass-card">
+            <div class="feature-copy">
+              <p class="feature-kicker">Approach unlock</p>
+              <h3>Auto Unlatch</h3>
+              <p>The exclusive Auto Unlatch feature automatically unlatches the driver door when you approach the car using your watch, but it stays inactive if the car is already unlocked so it does not trigger every time you pass through familiar places like your garage.</p>
+            </div>
+            <div class="feature-media dual-media">
+              <img src="/assets/images/auto-unlatch-watch.jpg" alt="Stats for Tesla Auto Unlatch on Apple Watch">
+              <img src="/assets/images/auto-unlatch-settings.png" alt="Stats for Tesla Auto Unlatch settings screen">
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
-    <footer>
-        <p>&copy; 2025 MaaDoTaa | <a href="https://www.maadotaa.com/" target="_blank">maadotaa.com</a></p>
-    </footer>
+
+    <section class="section section-dark" id="insights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Deep insights</p>
+          <h2>The kind of data Tesla owners keep coming back for.</h2>
+          <p>Stats pairs convenience with unusually rich visibility into battery behavior, trip performance, and long-term vehicle trends.</p>
+        </div>
+
+        <div class="insight-grid">
+          <article class="insight-card reveal glass-card">
+            <img src="/assets/images/battery-health.png" alt="Stats for Tesla battery health analytics">
+            <div>
+              <h3>Battery health and capacity</h3>
+              <p>Track capacity over time and understand battery condition with visuals built for owners who want more than a rough estimate.</p>
+            </div>
+          </article>
+
+          <article class="insight-card reveal glass-card">
+            <img src="/assets/images/trips.png" alt="Stats for Tesla trip analytics">
+            <div>
+              <h3>Trip and energy tracking</h3>
+              <p>Review drives, consumption, efficiency, and patterns that make road trips and day-to-day driving easier to understand.</p>
+            </div>
+          </article>
+
+          <article class="insight-card reveal glass-card">
+            <img src="/assets/images/smart-window-venting.png" alt="Stats for Tesla smart venting and vehicle state view">
+            <div>
+              <h3>Vehicle state intelligence</h3>
+              <p>Monitor climate-relevant data, temperature trends, and convenience signals that support smarter automation decisions.</p>
+            </div>
+          </article>
+
+          <article class="insight-card reveal glass-card">
+            <img src="/assets/images/sentry-notification.png" alt="Stats for Tesla sentry notification banner">
+            <div>
+              <h3>Sentry Notification</h3>
+              <p>When the car detects a sentry event, Stats issues a notification. Tapping it takes you straight to the Tesla app so you can view live cameras or watch the recorded sentry clip.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="insight-band reveal glass-card">
+          <div>
+            <p class="eyebrow">Beyond the phone</p>
+            <h3>Widgets, lock screen, live activity, Apple Watch, and more.</h3>
+            <p>Stats is designed to meet you where you are: on the Lock Screen while charging, in Control Center before you walk outside, on Apple Watch when your hands are full, and in the app when you want the full picture.</p>
+          </div>
+          <div class="band-media">
+            <img src="/assets/images/dynamic-island.png" alt="Stats for Tesla Dynamic Island charging display">
+            <img src="/assets/images/live-charge-watch.png" alt="Stats for Tesla live charge activity on Apple Watch">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trust and fit</p>
+          <h2>Built for people who care about control, detail, and polish.</h2>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal glass-card">
+            <h3>Official Tesla API</h3>
+            <p>Stats supports Tesla’s official API approach and recent platform changes, including Tesla-hosted sign-in flows.</p>
+          </article>
+          <article class="pillar reveal glass-card">
+            <h3>Thoughtful battery behavior</h3>
+            <p>The app is designed to avoid unnecessary wakeups so rich insight does not have to come with avoidable phantom-drain tradeoffs.</p>
+          </article>
+          <article class="pillar reveal glass-card">
+            <h3>Recent capability upgrades</h3>
+            <p>Features highlighted on the latest product experience, like Adjust Equalizer, Siri upgrades, AutoNav, Control Center support, and Live Charge Activity, take priority here.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Privacy</p>
+          <h2>Built around official access and careful handling.</h2>
+        </div>
+
+        <div class="privacy-card reveal glass-card">
+          <p>Stats uses Tesla-hosted authentication flows and official Tesla API support, which means your Tesla email address and password are not entered into Stats itself.</p>
+          <p>The app is designed to surface rich information and controls while being mindful about unnecessary vehicle wakeups, helping reduce avoidable phantom-drain impact.</p>
+          <p>Stats does not share your data with any other company, service, or third party.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="eyebrow">Ready to go deeper?</p>
+        <h2>Download Stats for Tesla.</h2>
+      </div>
+      <div class="footer-actions">
+        <a class="badge-link" href="https://itunes.apple.com/app/id1191100729" target="_blank" rel="noreferrer" aria-label="Download Stats for Tesla on the App Store">
+          <img src="/assets/badges/app-store-badge.svg" alt="Download on the App Store" width="180" height="60">
+        </a>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
 </body>
 </html>
