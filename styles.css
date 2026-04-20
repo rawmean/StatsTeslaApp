@@ -393,6 +393,55 @@ a {
   letter-spacing: -0.03em;
 }
 
+.subpage-main {
+  padding: 40px 0 96px;
+}
+
+.subpage-hero {
+  margin-bottom: 22px;
+}
+
+.subpage-hero h1 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.subpage-hero p {
+  max-width: 62ch;
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+.subpage-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.subpage-card h2 {
+  margin: 0 0 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.subpage-card p {
+  color: var(--muted);
+  line-height: 1.72;
+}
+
+.subpage-card p:last-child {
+  margin-bottom: 0;
+}
+
+.subpage-back {
+  margin-top: 18px;
+}
+
 .hero-card-media {
   overflow: hidden;
   margin: -6px -6px 18px;
@@ -1005,6 +1054,11 @@ blockquote {
     padding-bottom: 64px;
   }
 
+  .subpage-main {
+    padding-top: 28px;
+    padding-bottom: 80px;
+  }
+
   .hero-copy h1 {
     max-width: none;
   }
@@ -1076,6 +1130,10 @@ blockquote {
 
   .hero-copy h1 {
     font-size: 2.8rem;
+  }
+
+  .subpage-hero h1 {
+    font-size: 2.35rem;
   }
 
   .hero-text {
