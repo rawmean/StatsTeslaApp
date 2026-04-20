@@ -46,7 +46,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 const zoomableImages = document.querySelectorAll(
-  ".feature-card img, .insight-card img, .reviews-hero img, .review-tile img"
+  ".feature-card img, .insight-card img, .reviews-hero img, .review-tile img, .release-card img, .timeline-card img, .foundation-card img, .mosaic-panel img, .release-entry img, .release-entry-media img, .release-entry-media-duo img, .release-entry-media-triple img, .watch-collage img, .feature-media-stack img"
 );
 
 if (zoomableImages.length > 0) {
@@ -108,7 +108,7 @@ if (zoomableImages.length > 0) {
     image.dataset.zoomable = "true";
     image.tabIndex = 0;
     image.setAttribute("role", "button");
-    image.setAttribute("aria-label", `${image.alt || "Image"}. Tap to view full size.`);
+    image.setAttribute("aria-label", `${image.alt || "Image"}. Tap to view full screen.`);
 
     image.addEventListener("click", () => openLightbox(image));
     image.addEventListener("keydown", (event) => {
