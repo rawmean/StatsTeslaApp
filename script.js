@@ -45,6 +45,70 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+const faqItems = Array.from(document.querySelectorAll("[data-faq-item]"));
+const faqSearchInput = document.querySelector("#faq-search");
+
+if (faqItems.length > 0) {
+  const faqStatus = document.querySelector("[data-faq-status]");
+  const faqEmpty = document.querySelector("[data-faq-empty]");
+  const faqSections = Array.from(document.querySelectorAll("[data-faq-section]"));
+
+  const setStatus = (visibleCount, query) => {
+    if (!faqStatus) {
+      return;
+    }
+
+    if (!query) {
+      faqStatus.textContent = "Showing all questions";
+      return;
+    }
+
+    faqStatus.textContent =
+      visibleCount === 1
+        ? "Showing 1 matching question"
+        : `Showing ${visibleCount} matching questions`;
+  };
+
+  faqItems.forEach((item) => {
+    const button = item.querySelector(".faq-question");
+    if (!button) {
+      return;
+    }
+
+    button.addEventListener("click", () => {
+      const isOpen = item.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", String(isOpen));
+    });
+  });
+
+  const applyFaqFilter = () => {
+    const query = faqSearchInput?.value.trim().toLowerCase() ?? "";
+    let visibleCount = 0;
+
+    faqItems.forEach((item) => {
+      const text = item.textContent.toLowerCase();
+      const isVisible = !query || text.includes(query);
+      item.hidden = !isVisible;
+      item.classList.toggle("is-filter-open", Boolean(query && isVisible));
+      visibleCount += isVisible ? 1 : 0;
+    });
+
+    faqSections.forEach((section) => {
+      const hasVisibleItems = Array.from(section.querySelectorAll("[data-faq-item]")).some((item) => !item.hidden);
+      section.hidden = !hasVisibleItems;
+    });
+
+    if (faqEmpty) {
+      faqEmpty.hidden = visibleCount !== 0;
+    }
+
+    setStatus(visibleCount, query);
+  };
+
+  faqSearchInput?.addEventListener("input", applyFaqFilter);
+  applyFaqFilter();
+}
+
 const zoomableImages = document.querySelectorAll(
   ".feature-card img, .insight-card img, .reviews-hero img, .review-tile img, .release-card img, .timeline-card img, .foundation-card img, .mosaic-panel img, .release-entry img, .release-entry-media img, .release-entry-media-duo img, .release-entry-media-triple img, .watch-collage img, .feature-media-stack img"
 );
