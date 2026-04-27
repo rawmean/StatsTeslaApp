@@ -42,8 +42,8 @@
         <a href="/support/">Support</a>
       </nav>
 
-      <a class="download-chip" href="https://itunes.apple.com/app/id1191100729" target="_blank" rel="noreferrer">
-        Download
+      <a class="header-app-store" href="https://itunes.apple.com/app/id1191100729" target="_blank" rel="noreferrer" aria-label="Download Stats for Tesla on the App Store">
+        <img src="/assets/badges/app-store-badge.svg" alt="Download on the App Store" width="148" height="49">
       </a>
     </div>
   </header>
@@ -95,6 +95,16 @@
                   </ol>
                   <p>If pairing is successful, you should see a Bluetooth icon at the top of the control screen on your watch. Once paired, the watch can unlock the car and let you drive it when you pull the door handle.</p>
                   <p>If you see <strong>Bluetooth unsupported</strong> while pairing, restart your watch and tap <strong>Pair Watch With Car</strong> again.</p>
+                  <div class="faq-media faq-media-watch" aria-label="Watch pairing screenshots">
+                    <figure>
+                      <img src="/assets/faq/watch-pair-bluetooth-icon.png" alt="Stats watch control screen showing the Bluetooth icon after successful pairing">
+                      <figcaption>Bluetooth icon after pairing</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="/assets/faq/watch-bluetooth-unsupported.png" alt="Apple Watch screen showing Bluetooth unsupported with a Pair Watch With Car button">
+                      <figcaption>Bluetooth unsupported prompt</figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
 
@@ -104,6 +114,16 @@
                 </button>
                 <div class="faq-answer">
                   <p>Tap <strong>Watch Key Settings</strong>. If you see <strong>Bluetooth unsupported</strong>, restart the watch, then tap <strong>Pair Watch With Car</strong> and follow the watch instructions to complete pairing.</p>
+                  <div class="faq-media faq-media-watch" aria-label="Watch key pairing troubleshooting screenshots">
+                    <figure>
+                      <img src="/assets/faq/watch-key-settings.png" alt="Stats watch app screen with the WatchKey Settings button">
+                      <figcaption>WatchKey Settings</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="/assets/faq/watch-bluetooth-unsupported.png" alt="Apple Watch screen showing Bluetooth unsupported with a Pair Watch With Car button">
+                      <figcaption>Restart if Bluetooth is unsupported</figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
 
@@ -118,6 +138,12 @@
                     <li>Restart the watch.</li>
                     <li>If the Bluetooth icon still does not appear, unpair the watch from the car and pair it again. Remove the key associated with the watch before attempting to pair again.</li>
                   </ol>
+                  <div class="faq-media faq-media-watch" aria-label="Watch key Bluetooth status screenshot">
+                    <figure>
+                      <img src="/assets/faq/watch-pair-bluetooth-icon.png" alt="Stats watch control screen showing the Bluetooth status icon near the top">
+                      <figcaption>Look for the Bluetooth icon</figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
 
@@ -130,6 +156,16 @@
                   <p>If you do not see the Bluetooth icon, restart your watch and try again. If the icon still does not show up, pair the watch again using the instructions in this FAQ.</p>
                   <p>Once you see the Bluetooth icon, add the trunk/frunk proximity complication to your watch face.</p>
                   <p>To test the feature, lock the car and move about 15 to 20 feet away. Tap the complication, then approach the car. The trunk or frunk should open when you get close.</p>
+                  <div class="faq-media faq-media-watch" aria-label="Trunk and frunk proximity setup screenshots">
+                    <figure>
+                      <img src="/assets/faq/watch-pair-bluetooth-icon.png" alt="Stats watch control screen showing the Bluetooth icon">
+                      <figcaption>Confirm the watch is connected</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="/assets/faq/watch-proximity-complication.png" alt="Apple Watch face showing the Stats proximity complication circled">
+                      <figcaption>Add the proximity complication</figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
 
@@ -181,12 +217,18 @@
 
               <article class="faq-item glass-card" data-faq-item>
                 <button class="faq-question" type="button" aria-expanded="false">
-                  <span>Why doesn't the app connect to the car?</span>
+                  <span>After logging in with my Tesla account credentials, the app cannot connect to my car or show my car information. What should I do?</span>
                 </button>
                 <div class="faq-answer">
-                  <p>First verify that the Tesla app can connect to the car.</p>
-                  <p>If the Tesla app cannot connect either, verify that the car has internet connectivity. Rebooting the car typically fixes the issue when the car does not have internet connectivity.</p>
-                  <p>If the Tesla app can connect but Stats cannot, log out from Stats in the Settings tab, then log back in.</p>
+                  <p>If you have a legacy car, such as a Model S or Model X before 2021, enable third-party access for your car. On the vehicle touchscreen, go to <strong>Safety</strong> and enable <strong>Allow Third-Party App Data Streaming</strong>. Your data will not update until this is enabled.</p>
+                  <p>Also make sure you granted every permission that Stats requires. If even one permission was not granted when Stats showed the permissions list, Tesla may not provide the information the app needs to operate.</p>
+                  <p>If you are not sure whether all permissions were granted, open <a href="https://auth.tesla.com/user/revoke/consent?revoke_client_id=5c2ec72432e3-43e2-bbc3-06f816619cf5" target="_blank" rel="noreferrer">Tesla account permissions</a>, log in to your Tesla account, and make sure all boxes are checked.</p>
+                  <p>Finally, make sure your car is registered with Stats. If you are not sure whether you have done this before:</p>
+                  <ol>
+                    <li>Open the Tesla app and select your car if you have more than one Tesla.</li>
+                    <li>Go to the Settings tab in Stats.</li>
+                    <li>Tap <strong>Register with car</strong>.</li>
+                  </ol>
                 </div>
               </article>
 
@@ -203,21 +245,17 @@
 
               <article class="faq-item glass-card" data-faq-item>
                 <button class="faq-question" type="button" aria-expanded="false">
-                  <span>I cannot see the old Widget, also known as the Today Widget. How can I add it?</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Add the Today Widget associated with Stats. If the Stats Widget does not show up in the list, reboot your iPhone. If it still does not show up, delete and reinstall the app.</p>
-                  <p>Your data will be preserved, but you may need to re-enter settings such as the price of electricity.</p>
-                </div>
-              </article>
-
-              <article class="faq-item glass-card" data-faq-item>
-                <button class="faq-question" type="button" aria-expanded="false">
                   <span>Why are my average efficiency and phantom drain lines missing from the histograms?</span>
                 </button>
                 <div class="faq-answer">
                   <p>To compute a meaningful average for efficiency and phantom drain rate, the app needs at least 10 data points. Once enough data has been collected, the vertical lines on the histograms will show up automatically.</p>
                   <p>Also make sure the related setting switch in the app is enabled.</p>
+                  <div class="faq-media faq-media-phone" aria-label="Stats app setting screenshot">
+                    <figure>
+                      <img src="/assets/faq/ios-today-widget-step-2.jpg" alt="Stats app settings screen showing the share data option for histograms enabled">
+                      <figcaption>Make sure sharing for histogram data is enabled</figcaption>
+                    </figure>
+                  </div>
                 </div>
               </article>
 
@@ -266,6 +304,21 @@
                 <div class="faq-answer">
                   <p>Any USB to Lightning adapter recognized by iOS should work with the app.</p>
                   <p>If your storage device is a large SSD, it may need to be powered. In that case, an Apple Camera Adapter is recommended. You do not need external power if you are using a USB drive, SD card, or the USB drive provided by Tesla.</p>
+                  <div class="faq-media" aria-label="Sentry video adapter photo">
+                    <figure>
+                      <img src="/assets/faq/ios-efficiency-setting.jpeg" alt="USB, Lightning, and Apple camera adapters connected to an iPhone for viewing Sentry videos">
+                      <figcaption>Example adapter setup for external storage</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq-item glass-card" data-faq-item>
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>My car image does not show up in the app</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Go to <a href="https://www.tesla.com/" target="_blank" rel="noreferrer">Tesla.com</a> and log in to your account. Then open <a href="https://www.tesla.com/teslaaccount/oxp-bff-api/user-orders" target="_blank" rel="noreferrer">this Tesla account page</a> and email the text contents to <a href="mailto:apps@maadotaa.com?subject=need%20help%20with%20Stats%20for%20Tesla">apps@maadotaa.com</a>.</p>
                 </div>
               </article>
             </section>

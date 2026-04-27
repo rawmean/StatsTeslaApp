@@ -110,7 +110,7 @@ if (faqItems.length > 0) {
 }
 
 const zoomableImages = document.querySelectorAll(
-  ".feature-card img, .insight-card img, .reviews-hero img, .review-tile img, .release-card img, .timeline-card img, .foundation-card img, .mosaic-panel img, .release-entry img, .release-entry-media img, .release-entry-media-duo img, .release-entry-media-triple img, .watch-collage img, .feature-media-stack img"
+  ".feature-card img, .insight-card img, .reviews-hero img, .review-tile img, .release-card img, .timeline-card img, .foundation-card img, .mosaic-panel img, .release-entry img, .release-entry-media img, .release-entry-media-duo img, .release-entry-media-triple img, .watch-collage img, .feature-media-stack img, .faq-media img"
 );
 
 if (zoomableImages.length > 0) {
