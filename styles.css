@@ -913,6 +913,11 @@ a {
     rgba(255, 255, 255, 0.02);
 }
 
+.feature-image-tall {
+  aspect-ratio: 3 / 4;
+  max-height: 620px;
+}
+
 .feature-media-stack {
   display: grid;
   gap: 16px;
