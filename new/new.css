@@ -61,6 +61,13 @@
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, 500px);
 }
 
+.release-entry-ai {
+  background:
+    radial-gradient(circle at 16% 12%, rgba(121, 240, 208, 0.13), transparent 30%),
+    radial-gradient(circle at 86% 8%, rgba(131, 213, 255, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(16, 30, 47, 0.9), rgba(8, 17, 29, 0.82));
+}
+
 .release-entry-copy {
   display: grid;
   gap: 12px;
@@ -143,6 +150,15 @@
 .release-entry-media-triple {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
+}
+
+.ai-release-media {
+  align-self: center;
+}
+
+.ai-release-media img {
+  aspect-ratio: 1 / 1;
+  max-height: 340px;
 }
 
 .watch-collage {

@@ -884,6 +884,50 @@ a {
   justify-self: center;
 }
 
+.ai-widget-card {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(121, 240, 208, 0.13), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(131, 213, 255, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(16, 30, 47, 0.9), rgba(8, 17, 29, 0.82));
+}
+
+.ai-widget-showcase {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: minmax(0, 1.03fr) minmax(0, 0.97fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.ai-widget-media {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid rgba(180, 213, 250, 0.15);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(131, 213, 255, 0.08), transparent 42%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.ai-widget-media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.ai-widget-media figcaption {
+  color: var(--muted-strong);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.ai-widget-media-control {
+  transform: translateY(30px);
+}
+
 .dual-media {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1305,6 +1349,10 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .ai-widget-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .pillars,
   .spotlight-grid,
   .insight-grid {
@@ -1447,19 +1495,24 @@ blockquote {
   }
 
   .header-app-store img {
-    width: 132px;
+    width: 118px;
   }
 
   .brand strong {
-    font-size: 0.94rem;
+    font-size: 0.9rem;
   }
 
   .brand small {
-    font-size: 0.64rem;
+    display: none;
   }
 
   .hero-copy h1 {
-    font-size: 2.8rem;
+    max-width: 9ch;
+    font-size: 2.55rem;
+  }
+
+  .trust-points li {
+    overflow-wrap: anywhere;
   }
 
   .subpage-hero h1 {
@@ -1529,8 +1582,13 @@ blockquote {
   }
 
   .watch-collage,
-  .feature-media.dual-media {
+  .feature-media.dual-media,
+  .ai-widget-showcase {
     grid-template-columns: 1fr;
+  }
+
+  .ai-widget-media-control {
+    transform: none;
   }
 
   .faq-categories {
