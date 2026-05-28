@@ -68,6 +68,13 @@
     linear-gradient(180deg, rgba(16, 30, 47, 0.9), rgba(8, 17, 29, 0.82));
 }
 
+.release-entry-sentry {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(255, 173, 118, 0.18), transparent 30%),
+    radial-gradient(circle at 86% 10%, rgba(121, 240, 208, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(16, 30, 47, 0.92), rgba(8, 17, 29, 0.82));
+}
+
 .release-entry-copy {
   display: grid;
   gap: 12px;
@@ -159,6 +166,25 @@
 .ai-release-media img {
   aspect-ratio: 1 / 1;
   max-height: 340px;
+}
+
+.sentry-release-media {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sentry-release-media img {
+  width: 100%;
+  max-height: 360px;
+  aspect-ratio: 9 / 13;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.sentry-release-media .sentry-release-wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 7.35;
+  max-height: none;
+  object-position: center;
 }
 
 .watch-collage {
@@ -262,14 +288,20 @@
 
   .release-entry-media-duo,
   .release-entry-media-triple,
+  .sentry-release-media,
   .watch-collage {
     grid-template-columns: 1fr;
+  }
+
+  .sentry-release-media .sentry-release-wide {
+    aspect-ratio: 16 / 9;
   }
 
   .release-entry-media > img,
   .feature-media-stack > img,
   .release-entry-media-duo img,
   .release-entry-media-triple img,
+  .sentry-release-media img,
   .watch-collage img {
     max-height: 460px;
   }
