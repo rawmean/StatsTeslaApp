@@ -187,6 +187,13 @@
   object-position: center;
 }
 
+.sentry-alert-release-media img {
+  aspect-ratio: 16 / 7.05;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+
 .watch-collage {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
