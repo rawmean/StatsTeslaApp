@@ -261,6 +261,24 @@
   padding-top: 44px;
 }
 
+/* Newest release cards (v6.2.46) — landscape media fills the column edge
+   to edge at its native aspect ratio, matching the sentry-alert treatment. */
+.weather-card-release-media img {
+  aspect-ratio: 16 / 9.2;
+  width: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rain-closure-release-media img {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (max-width: 1120px) {
   .release-entry,
   .release-entry-wide {
@@ -343,5 +361,14 @@
 
   .feature-video-embed {
     border-radius: 16px;
+  }
+}
+
+/* Landscape release media is width-limited on small screens, so the generic
+   max-height caps would only crop it. Keep the native aspect ratio instead. */
+@media (max-width: 760px) {
+  .weather-card-release-media img,
+  .rain-closure-release-media img {
+    max-height: none;
   }
 }

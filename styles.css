@@ -931,6 +931,46 @@ a {
     linear-gradient(180deg, rgba(16, 30, 47, 0.9), rgba(8, 17, 29, 0.82));
 }
 
+.weather-card-showcase {
+  background:
+    radial-gradient(circle at 16% 14%, rgba(121, 240, 208, 0.12), transparent 30%),
+    radial-gradient(circle at 84% 8%, rgba(131, 213, 255, 0.15), transparent 28%),
+    linear-gradient(180deg, rgba(16, 30, 47, 0.9), rgba(8, 17, 29, 0.82));
+  /* The screenshot is wide, so stack it full-width under the copy instead of
+     centering it in a narrow column next to it. */
+  grid-template-columns: 1fr;
+}
+
+.weather-showcase-image {
+  width: 100%;
+  aspect-ratio: 16 / 9.2;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 22px;
+  border: 1px solid rgba(180, 213, 250, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.2);
+}
+
+.rain-closure-card {
+  background:
+    radial-gradient(circle at 24% 8%, rgba(131, 213, 255, 0.14), transparent 30%),
+    radial-gradient(circle at 84% 24%, rgba(121, 240, 208, 0.1), transparent 28%),
+    linear-gradient(180deg, rgba(16, 30, 47, 0.9), rgba(8, 17, 29, 0.82));
+  /* Match the weather showcase card's height so the first row stays flush. */
+  align-self: stretch;
+}
+
+.rain-closure-image {
+  flex: 1 1 auto;
+  min-height: 200px;
+  margin-top: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
+
 .ai-widget-showcase {
   align-self: stretch;
   display: grid;
