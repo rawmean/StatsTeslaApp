@@ -174,10 +174,10 @@
 }
 
 .siri-direct-release-media .siri-command-heading img {
-  width: 26px;
-  height: 24px;
-  max-width: 26px;
-  max-height: 24px;
+  width: 64px;
+  height: 64px;
+  max-width: 64px;
+  max-height: 64px;
   padding: 0;
   object-fit: contain;
 }

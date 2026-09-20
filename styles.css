@@ -1067,13 +1067,13 @@ a {
 }
 
 .siri-command-heading .siri-command-icon {
-  width: 26px !important;
-  height: 24px !important;
-  max-width: 26px !important;
-  max-height: 24px !important;
-  flex: 0 0 26px;
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+  flex: 0 0 64px;
   padding: 0 !important;
-  border-radius: 6px;
+  border-radius: 14px;
   object-fit: contain;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
 }
